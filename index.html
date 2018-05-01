@@ -10,7 +10,7 @@
  
   </head>
   <body>
-	  <div> <h1>Hello World! </h1> </div>
+	
     <div id="chart"></div>
     <script type="text/javascript">
 
@@ -32,7 +32,7 @@ var vis = d3.select("#chart").append("svg:svg")
   .append("svg:g")
     .attr("transform", "translate(40,0)");
 
-d3.json("math_map_compact.json", function(json) {
+d3.json("chn_dict.json", function(json) {
   json.x0 = 800;
   json.y0 = 0;
   update(root = json);
